@@ -43,6 +43,32 @@ $ docker ps -a
 $ docker start 서버명
 ```
 
+## 7. nginx 연결 설정
+
+0. sites-avaliable, sites-enabled 옵션 설정
+   - nginx.conf 속 include path 추가
+   - available - enabled symbolic link 추가
+   ```
+   $ sudo ln -s [available 속 custom conf 파일 경로] [enabled]
+   ```
+1. conf 파일 속 upstream 옵션 이용 -> 로드밸런싱 적용될 서버 추가
+2. server 옵션 이용해 proxy_pass 처리
+
+```
+// 문법 검사
+$ sudo nginx -t
+
+// 실행
+$ nginx
+
+// 멈추기
+$ nginx -s stop
+```
+
+### Todo
+
+- node cluster 서버 작성
+
 ### 출저
 
 http://labs.brandi.co.kr/2018/05/25/kangww.html
