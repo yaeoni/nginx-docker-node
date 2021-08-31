@@ -1,0 +1,22 @@
+{
+  "name": "nginx-docker-node",
+  "version": "1.0.0",
+  "description": "nginx - docker - node 구조 공부 및 개발",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaeoni/nginx-docker-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaeoni/nginx-docker-node/issues"
+  },
+  "homepage": "https://github.com/yaeoni/nginx-docker-node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
